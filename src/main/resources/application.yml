@@ -1,12 +1,22 @@
 spring:
+  h2:
+    console:
+      enabled: true
+
   application:
     name: MultipleJDBCClient
 
   main:
     banner-mode: off
   datasource:
-    url: jdbc:mysql://localhost:3306/first_db
-    generate-unique-name: false
-    username: omerSolutions
-    password: om3r1010
+    blog:
+      url: jdbc:h2:mem:blog
+      username: omerSolutions
+      password: om3r1010
+    subscribe:
+      url: jdbc:h2:mem:subscribers
+      username: omerSolutions
+      password: om3r1010
+
+    driver-class-name: org.h2.Driver
 
