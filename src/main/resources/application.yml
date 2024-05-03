@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: MultipleJDBCClient
+
+  main:
+    banner-mode: off
+  datasource:
+    url: jdbc:mysql://localhost:3306/first_db
+    generate-unique-name: false
+    username: omerSolutions
+    password: om3r1010
+
