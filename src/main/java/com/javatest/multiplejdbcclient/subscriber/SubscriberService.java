@@ -1,5 +1,6 @@
 package com.javatest.multiplejdbcclient.subscriber;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ public class SubscriberService {
 
     private final JdbcClient dataSource;
 
-    public SubscriberService(JdbcClient dataSource) {
+    public SubscriberService(@Qualifier("subscriberJdbcClient") JdbcClient dataSource) {
         this.dataSource = dataSource;
     }
 
