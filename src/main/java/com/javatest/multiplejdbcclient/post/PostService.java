@@ -12,6 +12,7 @@ public class PostService {
 
     private final JdbcClient jdbcClient;
 
+
     public PostService(@Qualifier("blogJdbcClient") JdbcClient jdbcClient) {
         this.jdbcClient = jdbcClient;
     }
