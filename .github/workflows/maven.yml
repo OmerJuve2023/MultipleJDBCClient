@@ -32,7 +32,7 @@ jobs:
     - name: Testting with Maven
       run: mvn test
     - name: Public Package 
-      run: mvn --batch -mode deploy
+      run: mvn --batch-mode deploy
       env:
         GITHUB_TOKEN: ${{ secrets.JAVA_TOKEN }}
       
