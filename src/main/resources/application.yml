@@ -1,0 +1,31 @@
+spring:
+  h2:
+    console:
+      enabled: true
+
+  application:
+    name: MultipleJDBCClient
+
+  main:
+    banner-mode: off
+
+app:
+  datasource:
+
+    blog:
+      url: jdbc:h2:mem:blog
+      username: omerSolutions
+      password: om3r1010
+
+    subscribers:
+      url: jdbc:h2:mem:subscribers
+      username: omerSolutions
+      password: om3r1010
+
+      driver-class-name: org.h2.Driver
+
+logging:
+  level:
+    root: info
+    org.springframework: info
+    com.javatest.multiplejdbcclient: debug

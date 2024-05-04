@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.javatest</groupId>
     <artifactId>MultipleJDBCClient</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>MultipleJDBCClient</name>
     <description>MultipleJDBCClient</description>
     <properties>
