@@ -31,3 +31,8 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Testting with Maven
       run: mvn test
+    - name: Public Package 
+      run: mvn --batch -mode deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.JAVA_TOKEN }}
+      
