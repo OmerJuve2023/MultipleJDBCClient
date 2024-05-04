@@ -32,7 +32,7 @@ public class PostTest {
     private JdbcClient.MappedQuerySpec<Post> querySpec;
 
     @BeforeEach
-    public void setup() {
+    public void setup()  {
         // Inicializa los mocks antes de cada prueba
         MockitoAnnotations.openMocks(this);
     }
