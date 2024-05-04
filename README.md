@@ -73,7 +73,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "5000:5000"
+      - "8000:8000"
 ```
 
 ## Project Initializer
