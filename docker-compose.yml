@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   web:
-    container_name: MultipleJDBCClient
+    container_name: multiple-jdbc-client
     build:
       context: .
       dockerfile: Dockerfile
