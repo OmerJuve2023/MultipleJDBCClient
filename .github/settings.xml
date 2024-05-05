@@ -17,7 +17,7 @@
                 </repository>
                 <repository>
                     <id>github</id>
-                    <url>https://maven.pkg.github.com/OmerJuve2023/MultipleJDBCClient</url>
+                    <url>https://maven.pkg.github.com/OmerJuve2023/*</url>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
@@ -30,7 +30,7 @@
         <server>
             <id>github</id>
             <username>OmerJuve2023</username>
-            <password>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</password>
+            <password>ElOmerperu2010</password>
         </server>
     </servers>
 </settings>
