@@ -43,4 +43,4 @@ jobs:
       - name: Publish package
         run: ./mvnw deploy
         env:
-          GITHUB_TOKEN: ${{ github.JAVA_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.github.JAVA_TOKEN }}
