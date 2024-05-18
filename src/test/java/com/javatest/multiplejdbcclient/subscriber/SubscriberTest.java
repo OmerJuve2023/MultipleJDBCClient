@@ -40,7 +40,11 @@ public class SubscriberTest {
         Subscriber subscriber2 = new Subscriber(2, "Name 2", "Email 2");
         List<Subscriber> subscribers = Arrays.asList(subscriber1, subscriber2);
 
-        // Configura el comportamiento esperado del mock jdbcClient
+        /**
+         *Configura el comportamiento esperado del mock jdbcClient
+         */
+
+
         when(jdbcClient.sql(any(String.class))).thenReturn(statementSpec);
         // Establece que cuando se llama al método sql() del mock jdbcClient con cualquier cadena como argumento, debe devolver el mock statementSpec
 
