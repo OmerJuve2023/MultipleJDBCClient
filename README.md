@@ -98,6 +98,21 @@ docker build -t multiple-jdbc-client .
 docker run -p 8080:8080 multiple-jdbc-client
 ```
 
+# Build with GraalVM
+
+1. Build the native image
+
+```bash
+mvn -Pnative spring-boot:build-image
+```
+
+2. Run the native image
+
+```bash
+docker run -p 8080:8080 multiple-jdbc-client
+```
+
+
 ## Testing
 
 The project includes unit tests for the `PostService` and `SubscriberService` classes. The tests use JUnit and Mockito

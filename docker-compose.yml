@@ -1,9 +1,0 @@
-version: "3.9"
-services:
-  web:
-    container_name: multiple-jdbc-client
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "5000:5000"

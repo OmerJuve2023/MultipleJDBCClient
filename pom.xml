@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.javatest</groupId>
-    <artifactId>MultipleJDBCClient</artifactId>
+    <artifactId>multiple-jdbc-client</artifactId>
     <version>1.0.0</version>
-    <name>MultipleJDBCClient</name>
-    <description>MultipleJDBCClient</description>
+    <name>multiple-jdbc-client</name>
+    <description>multiple-jdbc-client</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -67,6 +67,10 @@
                         </exclude>
                     </excludes>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.graalvm.buildtools</groupId>
+                <artifactId>native-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
